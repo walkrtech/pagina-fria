@@ -664,6 +664,10 @@ nav {
 
 @media (max-width: 500px) {
 
+    .app-padding {
+        padding: 0 !important;
+    }
+
     .video {
         padding: 0 !important;
     }
