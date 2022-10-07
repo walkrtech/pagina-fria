@@ -1,0 +1,982 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso - Método onevalue</title>
+    <link rel="stylesheet" href="./public/stylesheets/style.css">
+    <link rel="shortcut icon" href="./public/walkr.png" type="image/x-icon">
+    <script src="./public/javascript/index.js" defer></script>
+    <script src="./public/javascript/bootstrap.min.js" defer></script>
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+    <script defer>
+        (function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-P6JD5J2');
+    </script>
+    <script>
+        !function (f, b, e, v, n, t, s) {
+            if (f.fbq) return; n = f.fbq = function () {
+                n.callMethod ?
+                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            };
+            if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+            n.queue = []; t = b.createElement(e); t.async = !0;
+            t.src = v; s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s)
+        }(window, document, 'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '1154411741993585');
+        fbq('track', 'PageView');
+    </script>
+
+    <noscript>
+        <img height="1" width="1" style="display:none"
+            src="https://www.facebook.com/tr?id=1154411741993585&ev=PageView&noscript=1" />
+    </noscript>
+    <script type="text/javascript">
+        (function (c, l, a, r, i, t, y) {
+            c[a] = c[a] || function () { (c[a].q = c[a].q || []).push(arguments) };
+            t = l.createElement(r); t.async = 1; t.src = "https://www.clarity.ms/tag/" + i;
+            y = l.getElementsByTagName(r)[0]; y.parentNode.insertBefore(t, y);
+        })(window, document, "clarity", "script", "dxau605v54");
+    </script>
+</head>
+
+<body>
+    <noscript>
+        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P6JD5J2" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe>
+    </noscript>
+
+    <nav class="pt-2 pb-1 d-flex position-fixed justify-content-around align-items-center w-100 header-fixed">
+        <img class="mw-350 img-fluid" width="180" src="https://landing-vendas.s3.amazonaws.com/marca.svg"
+            alt="onevalue.svg">
+        <a href="#subscription" class="text-mobile btn btn-green rounded ps-3 pe-3 pt-2 pb-2 text-white ls">
+            INSCREVA-SE AGORA
+        </a>
+    </nav>
+
+    <section class="bg-header text-white pt-5 pb-5">
+        <div class="container-fluid pt-5 mb-5 text-center">
+            <h2 class="text-green fw-bold pt-5 title-mobile">
+                O MÉTODO USADO CAPAZ DE ENRIQUECER QUALQUER PESSOA, MESMO QUEM NUNCA TENHA INVESTIDO ANTES.
+            </h2>
+            <p class="pt-5 pb-5 fw-bold fs-4 subtitle-mobile container">
+                Depois de construir um
+                <span class="text-green">
+                    método patenteado
+                </span>
+                que fez
+                <span class="text-green">
+                    milhares de famílias enriquecerem
+                </span>
+                (mesmo sem entenderem de investimento) eu quero te mostrar...
+            </p>
+
+            <div class="video container">
+                <button class="btn-video" onclick="videoStatus()" id="btn-video"><img id="image-button" width="50"
+                        src="https://landing-vendas.s3.amazonaws.com/landing-fria/icons/play.svg" alt=""></button>
+                <button class="btn-sound" onclick="videoMute()"><img id="btn-sound" width="30"
+                        src="https://landing-vendas.s3.amazonaws.com/icons/Sound.svg" alt=""></button>
+                <button class="btn-fullscreen" onclick="videoFullscreen()" id="btn-fullscreen"><img id="image-button"
+                        width="30" src="https://landing-vendas.s3.amazonaws.com/icons/Full+Screen.svg" alt=""></button>
+                <video width="100%" playsInline class="mh-100 mw-100" id="video">
+                    <source src="https://landing-vendas.s3.amazonaws.com/landing-fria/Boas+vindas.mp4">
+                </video>
+                <button class="btn-restart" onclick="restartVideo()" id="btn-restart">ASSISTIR NOVAMENTE?</button>
+            </div>
+
+            <a class="subtitle-mobile fs-2 btn btn-green text-white rounded fw-bold ps-4 pe-4 pt-2 pb-2 mt-5"
+                href="#subscription">
+                SIM, EU QUERO ENRIQUECER USANDO O MÉTODO
+            </a>
+        </div>
+    </section>
+
+    <section class="text-white pt-5 pb-5 bg-onevalue position-relative ">
+
+        <div class="text-gray text-center mt-5">
+            <p class="fs-5 fw-bold pb-0">
+                COM O MÉTODO
+            </p>
+            <img class="img-fluid mw-400 img-mobile"
+                src="https://landing-vendas.s3.amazonaws.com/landing-fria/icons/text-onevalue.svg"
+                alt="text-onevalue.svg">
+            <p class="fs-5 fw-bold mt-2">
+                VOCÊ VAI APRENDER:
+            </p>
+        </div>
+
+        <div class="container d-md-flex d-none justify-content-center align-items-center mt-5 ">
+            <img class="img-fluid mw-800" src="https://landing-vendas.s3.amazonaws.com/landing-fria/cards-onevalue.svg"
+                alt="cards-onevalue.svg">
+        </div>
+
+        <div id="carouselOnevalue" class="carousel slide d-md-none" data-bs-ride="carousel">
+            <div class="carousel-inner ">
+                <div class="carousel-item active">
+                    <div class="d-flex justify-content-center">
+                        <img class="img-fluid img-mobile ms-4"
+                            src="https://landing-vendas.s3.amazonaws.com/landing-fria/first.svg" alt="module1.svg">
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="d-flex justify-content-center">
+                        <img class="img-fluid img-mobile ms-4"
+                            src="https://landing-vendas.s3.amazonaws.com/landing-fria/second.svg" alt="module2.svg">
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="d-flex justify-content-center">
+                        <img class="img-fluid img-mobile ms-4"
+                            src="https://landing-vendas.s3.amazonaws.com/landing-fria/third.svg" alt="module3.svg">
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="d-flex justify-content-center">
+                        <img class="img-fluid img-mobile"
+                            src="https://landing-vendas.s3.amazonaws.com/landing-fria/fourth.svg" alt="module4.svg">
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselOnevalue" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselOnevalue" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+
+    <section class="container pt-5 pb-5 text-white">
+        <h2 class="text-center fw-bold text-uppercase">
+            A
+            <span class="text-green">
+                grande maioria
+            </span>
+            das pessoas não
+            possuem problemas em fazer dinheiro e
+            sim no que fazer com o
+            <span class="text-green">
+                dinheiro
+            </span>
+            que ganham. Investem mal e com isso ficam
+            <span class="text-green">
+                dependentes
+            </span>
+            de agentes e
+            consultores.
+        </h2>
+
+        <div class="row d-flex align-items-center justify-content-center">
+            <div class="col-md-8 gap-4 mt-4 d-flex flex-column align-items-start justify-content-center">
+                <div class="d-flex">
+                    <img class="me-3" src="https://landing-vendas.s3.amazonaws.com/landing-fria/icons/losangle.svg"
+                        alt="losangle.svg">
+                    <p class="m-0">
+                        Não sabem investir.
+                    </p>
+                </div>
+                <div class="d-flex">
+
+                    <img class="me-3" src="https://landing-vendas.s3.amazonaws.com/landing-fria/icons/losangle.svg"
+                        alt="losangle.svg">
+                    <p class="m-0">
+                        Não TEM planejamento financeiro.
+                    </p>
+                </div>
+
+                <div class="d-flex">
+
+                    <img class="me-3" src="https://landing-vendas.s3.amazonaws.com/landing-fria/icons/losangle.svg"
+                        alt="losangle.svg">
+                    <p class="m-0">
+                        Não tem metas traçadas e
+                        objetivos específicos.
+                    </p>
+                </div>
+                <div class="d-flex">
+
+                    <img class="me-3" src="https://landing-vendas.s3.amazonaws.com/landing-fria/icons/losangle.svg"
+                        alt="losangle.svg">
+                    <p class="m-0">
+                        Não sabem analisar os seus gastos.
+
+                    </p>
+                </div>
+                <div class="d-flex">
+                    <img class="me-3" src="https://landing-vendas.s3.amazonaws.com/landing-fria/icons/losangle.svg"
+                        alt="losangle.svg">
+                    <p>
+                        E você não pode terceirizar o seu
+                        futuro para alguém que não está
+                        nem 1% preocupado com o
+                        planejamento que você fez para
+                        sua vida.
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-4 d-md-flex d-none">
+                <img class="img-fluid" src="https://landing-vendas.s3.amazonaws.com/landing-fria/mauro-phone.png"
+                    alt="mauro-phone.png">
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-gray pt-5 pb-5">
+        <div class="row container-fluid">
+            <div class="col-md-12 d-md-flex d-none flex-column justify-content-center align-items-center">
+                <img class="img-fluid" src="https://landing-vendas.s3.amazonaws.com/landing-fria/metodo.svg"
+                    alt="metodo.png">
+            </div>
+
+            <div class="col-md-6 d-md-none d-flex justify-content-center">
+                <img class="img-fluid" src="https://landing-vendas.s3.amazonaws.com/landing-fria/logo-rounded.svg"
+                    alt="logo-rounded.svg">
+            </div>
+
+            <div
+                class="mt-4 col-md-5 d-md-none text-blue gap-5 d-flex flex-column justify-content-center align-items-start">
+                <div class="mt-1 d-flex justify-content-center align-items-center gap-4">
+                    <img class="d-md-none" src="https://landing-vendas.s3.amazonaws.com/landing-fria/renda.svg"
+                        alt="renda.svg">
+                    <p class="d-md-none">
+                        Fazer a carteira render
+                        depois de desenhado o seu
+                        projeto de vida, você terá um plano prático para ter rendimentos
+                        a longo, médio e curto prazo.
+                    </p>
+                </div>
+                <div class="mt-1 d-flex justify-content-center align-items-center gap-4">
+                    <img class="d-md-none" src="https://landing-vendas.s3.amazonaws.com/landing-fria/poupar.svg"
+                        alt="poupar.svg">
+                    <p class="d-md-none">
+                        Você pode poupar do jeito certo e construir um projeto de vida, sem que ninguém fale para você o
+                        que
+                        precisa fazer com o seu dinheiro.
+                    </p>
+                </div>
+                <div class="mt-1 d-flex justify-content-center align-items-center gap-4">
+                    <img class="d-md-none" src="https://landing-vendas.s3.amazonaws.com/landing-fria/tempo.svg"
+                        alt="tempo.svg">
+                    <p class="d-md-none">
+                        Fazer o tempo trabalhar a seu favor, você terá um plano de vida personalizado onde conseguirá
+                        traçar
+                        uma
+                        estratégia para POUPAR no curto, médio e longo prazo.
+                    </p>
+                </div>
+                <div class="mt-1 d-flex justify-content-center align-items-center gap-4">
+                    <img class="d-md-none" src="https://landing-vendas.s3.amazonaws.com/landing-fria/patrimonio.svg"
+                        alt="patrimonio.svg">
+                    <p class="d-md-none">
+                        Saber o momento que está para construir um projeto de vida para chegar no seu objetivo.
+                    </p>
+                </div>
+
+            </div>
+            <div class="col-md-1 d-md-none"></div>
+
+        </div>
+    </section>
+
+    <section class="text-white pt-5 pb-5 bg-module position-relative">
+        <h1 class="text-center fw-bold mt-5 mb-5 pb-5">AO QUE VOCÊ VAI TER ACESSO NO CURSO?</h1>
+
+        <div class="row d-md-flex d-none justify-content-center align-items-center gap-5">
+            <div class="col-md-3 d-flex flex-column align-items-center justify-content-center bg-modules-1">
+            </div>
+            <div class="col-md-3 d-flex flex-column align-items-center justify-content-center bg-modules-2">
+            </div>
+            <div class="col-md-3 d-flex flex-column align-items-center justify-content-center bg-modules-3">
+            </div>
+            <div class="col-md-3 d-flex flex-column align-items-center justify-content-center bg-modules-4">
+            </div>
+        </div>
+
+        <div id="carouselModules" class="carousel slide d-md-none" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="d-flex justify-content-center">
+                        <img class="img-mobile" src="https://landing-vendas.s3.amazonaws.com/landing-fria/module1.png"
+                            alt="module1.png">
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="d-flex justify-content-center">
+                        <img class="img-mobile" src="https://landing-vendas.s3.amazonaws.com/landing-fria/module2.png"
+                            alt="module2.png">
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="d-flex justify-content-center">
+                        <img class="img-mobile" src="https://landing-vendas.s3.amazonaws.com/landing-fria/module3.png"
+                            alt="module3.png">
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="d-flex justify-content-center">
+                        <img class="img-mobile" src="https://landing-vendas.s3.amazonaws.com/landing-fria/module4.png"
+                            alt="module4.png">
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselModules" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselModules" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+    </section>
+
+    <section class="bg-gray text-light-blue pt-5 pb-5">
+        <div class="container">
+
+            <div class="row d-flex justify-content-center align-items-center pt-5 pb-5">
+                <div class="col-md-6">
+                    <img class="img-notebook img-fluid"
+                        src="https://landing-vendas.s3.amazonaws.com/landing-fria/notebook.png" alt="notebook.png">
+                </div>
+                <div class="col-md-6 d-flex flex-column justify-content-center align-items-md-start">
+                    <h2 class="text-blue text-center fs-2 fw-bold mb-4">Para quem é o método?</h2>
+                    <div class="text-blue d-flex align-items-center pt-3 pb-3 rounded">
+                        <img src="https://landing-vendas.s3.amazonaws.com/landing-fria/icons/losangle.svg"
+                            alt="losangle.svg">
+                        <p class="ms-3 mb-0">Para quem quer fazer a carteira ter rendimentos maiores.</p>
+                    </div>
+                    <div class="text-blue d-flex align-items-center pt-3 pb-3 rounded">
+                        <img src="https://landing-vendas.s3.amazonaws.com/landing-fria/icons/losangle.svg"
+                            alt="losangle.svg">
+                        <p class="ms-3 mb-0">Para quem quer aproveitar a vida e não ficar se matando de trabalhar.</p>
+                    </div>
+                    <div class="text-blue d-flex align-items-center pt-3 pb-3 rounded">
+                        <img src="https://landing-vendas.s3.amazonaws.com/landing-fria/icons/losangle.svg"
+                            alt="losangle.svg">
+                        <p class="ms-3 mb-0">Para quem não quer depender de terceiros para cuidar do seu dinheiro.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="pt-5 pb-5">
+        <div class="container">
+
+            <h1 class="text-white text-center fw-bold pb-5">O que estão falando do nosso <span
+                    class="text-green">Curso</span>?</h1>
+
+            <div id="carouselFeedback" class="carousel slide d-none d-md-block" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="d-flex justify-content-center gap-3">
+                            <div class="feedback-cards bg-white d-flex flex-column align-items-center p-1">
+                                <img width="80" class="mt-4"
+                                    src="https://walkr.app/wp-content/uploads/2022/09/depoimento-walkr.png"
+                                    alt="depoimento-walkr.png">
+                                <p class="text-dark text-center mt-5 mb-5">
+                                    “Me considero uma pessoa equilibrada nas minhas finanças pessoais, mas nunca
+                                    consegui de
+                                    fato poupar para realizar meus sonhos e ter uma estabilidade no final da minha vida
+                                    profissional. O Walkr me mostrou como trilhar esse caminho, gerando respostas que me
+                                    deixaram muito confortáveis.“
+                                </p>
+                                <p class="text-blue fw-bold">Hugo Pires</p>
+                            </div>
+                            <div class="feedback-cards bg-white d-flex flex-column align-items-center p-1">
+                                <img width="80" class="mt-4"
+                                    src="https://walkr.app/wp-content/uploads/2022/09/depoimento-walkr.png"
+                                    alt="depoimento-walkr.png">
+                                <p class="text-dark text-center mt-5 mb-5">
+
+                                    “Nunca vi uma plataforma ou aplicativo que faz o que essa ferramenta faz! O Walkr
+                                    consegue trazer realmente o que eu preciso fazer para chegar nos seus objetivos, é
+                                    bem
+                                    intuitivo e bem claro as informações. Ver que é possível chegar à onde eu quero e
+                                    saber
+                                    o que tenho que fazer para isso é muito gratificante e animador!!!”
+                                </p>
+                                <p class="text-blue fw-bold">Lucas Carvalho</p>
+                            </div>
+                            <div class="feedback-cards bg-white d-flex flex-column align-items-center p-1">
+                                <img width="80" class="mt-4"
+                                    src="https://walkr.app/wp-content/uploads/2022/09/depoimento-walkr.png"
+                                    alt="depoimento-walkr.png">
+                                <p class="text-dark text-center mt-5 mb-5">
+
+                                    "Fiquei fascinado depois que conheci o Walkr, tive todas as respostas da minha vida
+                                    financeira, hoje consigo aplicar os meus recursos da forma correta. Agora sei que
+                                    estou
+                                    no caminho certo para alcançar minha independência financeira."
+                                </p>
+                                <p class="text-blue fw-bold">Jadiel Áddson</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="d-flex justify-content-center gap-3">
+
+                            <div class="feedback-cards bg-white d-flex flex-column align-items-center p-1">
+                                <img width="80" class="mt-4"
+                                    src="https://walkr.app/wp-content/uploads/2022/09/depoimento-walkr.png"
+                                    alt="depoimento-walkr.png">
+                                <p class="text-dark text-center mt-5 mb-5">
+                                    "Fiquei fascinado depois que conheci o Walkr, tive todas as respostas da minha vida
+                                    financeira, hoje consigo aplicar os meus recursos da forma correta. Agora sei que
+                                    estou
+                                    no caminho certo para alcançar minha independência financeira." </p>
+                                <p class="text-blue fw-bold">Rodrigo Oliveira</p>
+                            </div>
+                            <div class="feedback-cards bg-white d-flex flex-column align-items-center p-1">
+                                <img width="80" class="mt-4"
+                                    src="https://walkr.app/wp-content/uploads/2022/09/depoimento-walkr.png"
+                                    alt="depoimento-walkr.png">
+                                <p class="text-dark text-center mt-5 mb-5">
+                                    “Walkr me abriu os olhos para uma nova realidade econômica, percebi que minha
+                                    educação
+                                    financeira tradicional estava completamente sem foco. O Walkr conseguiu consolidar
+                                    todos
+                                    os meus sonhos em único número e me está me guiando exatamente como chegar lá!” </p>
+                                <p class="text-blue fw-bold">Guilherme Cavallini</p>
+                            </div>
+                            <div class="feedback-cards bg-white d-flex flex-column align-items-center p-1">
+                                <img width="80" class="mt-4"
+                                    src="https://walkr.app/wp-content/uploads/2022/09/depoimento-walkr.png"
+                                    alt="depoimento-walkr.png">
+                                <p class="text-dark text-center mt-5 mb-5">
+                                    O Walkr ajuda até quem não precisa de ajuda! Consegui respostas que não achei em
+                                    nenhum
+                                    outro lugar e agora tenho meu planejamento sem dores de cabeça. Super Recomendo! ”
+                                </p>
+                                <p class="text-blue fw-bold">Alexandre Oliveira</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="carouselFeedbackMobile" class="carousel slide d-md-none d-block" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="d-flex justify-content-center">
+                            <div class="feedback-cards bg-white d-flex flex-column align-items-center p-1">
+                                <img width="80" class="mt-4"
+                                    src="https://walkr.app/wp-content/uploads/2022/09/depoimento-walkr.png"
+                                    alt="depoimento-walkr.png">
+                                <p class="text-dark text-center text-center mt-5 mb-5">
+                                    “Nunca vi uma plataforma ou aplicativo que faz o que essa ferramenta faz! O Walkr
+                                    consegue trazer realmente o que eu preciso fazer para chegar nos seus objetivos, é
+                                    bem
+                                    intuitivo e bem claro as informações. Ver que é possível chegar à onde eu quero e
+                                    saber
+                                    o que tenho que fazer para isso é muito gratificante e animador!!!”
+                                </p>
+                                <p class="text-blue fw-bold">Lucas Carvalho</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="d-flex justify-content-center">
+                            <div class="feedback-cards bg-white d-flex flex-column align-items-center p-1">
+                                <img width="80" class="mt-4"
+                                    src="https://walkr.app/wp-content/uploads/2022/09/depoimento-walkr.png"
+                                    alt="depoimento-walkr.png">
+                                <p class="text-dark text-center mt-5 mb-5">
+
+                                    "Fiquei fascinado depois que conheci o Walkr, tive todas as respostas da minha vida
+                                    financeira, hoje consigo aplicar os meus recursos da forma correta. Agora sei que
+                                    estou
+                                    no caminho certo para alcançar minha independência financeira."
+                                </p>
+                                <p class="text-blue fw-bold">Jadiel Áddson</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="d-flex justify-content-center">
+                            <div class="feedback-cards bg-white d-flex flex-column align-items-center p-1">
+                                <img width="80" class="mt-4"
+                                    src="https://walkr.app/wp-content/uploads/2022/09/depoimento-walkr.png"
+                                    alt="depoimento-walkr.png">
+                                <p class="text-dark text-center mt-5 mb-5">
+                                    “Walkr me abriu os olhos para uma nova realidade econômica, percebi que minha
+                                    educação
+                                    financeira tradicional estava completamente sem foco. O Walkr conseguiu consolidar
+                                    todos
+                                    os meus sonhos em único número e me está me guiando exatamente como chegar lá!” </p>
+                                <p class="text-blue fw-bold">Guilherme Cavallini</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="d-flex justify-content-center">
+                            <div class="feedback-cards bg-white d-flex flex-column align-items-center p-1">
+                                <img width="80" class="mt-4"
+                                    src="https://walkr.app/wp-content/uploads/2022/09/depoimento-walkr.png"
+                                    alt="depoimento-walkr.png">
+                                <p class="text-dark text-center mt-5 mb-5">
+                                    O Walkr ajuda até quem não precisa de ajuda! Consegui respostas que não achei em
+                                    nenhum
+                                    outro lugar e agora tenho meu planejamento sem dores de cabeça. Super Recomendo! ”
+                                </p>
+                                <p class="text-blue fw-bold">Alexandre Oliveira</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="d-flex justify-content-center">
+                            <div class="feedback-cards bg-white d-flex flex-column align-items-center p-1">
+                                <img width="80" class="mt-4"
+                                    src="https://walkr.app/wp-content/uploads/2022/09/depoimento-walkr.png"
+                                    alt="depoimento-walkr.png">
+                                <p class="text-dark text-center mt-5 mb-5">
+                                    “Me considero uma pessoa equilibrada nas minhas finanças pessoais, mas nunca
+                                    consegui de
+                                    fato poupar para realizar meus sonhos e ter uma estabilidade no final da minha vida
+                                    profissional. O Walkr me mostrou como trilhar esse caminho, gerando respostas que me
+                                    deixaram muito confortáveis.“
+                                </p>
+                                <p class="text-blue fw-bold">Hugo Pires</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="d-flex justify-content-center">
+                            <div class="feedback-cards bg-white d-flex flex-column align-items-center p-1">
+                                <img width="80" class="mt-4"
+                                    src="https://walkr.app/wp-content/uploads/2022/09/depoimento-walkr.png"
+                                    alt="depoimento-walkr.png">
+                                <p class="text-dark text-center mt-5 mb-5">
+                                    "Fiquei fascinado depois que conheci o Walkr, tive todas as respostas da minha vida
+                                    financeira, hoje consigo aplicar os meus recursos da forma correta. Agora sei que
+                                    estou
+                                    no caminho certo para alcançar minha independência financeira." </p>
+                                <p class="text-blue fw-bold">Rodrigo Oliveira</p>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselFeedbackMobile"
+                        data-bs-slide="prev">
+                        <span class="text-green display-1 me-4">
+                            << /span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselFeedbackMobile"
+                        data-bs-slide="next">
+                        <span class="text-green display-1 ms-4">></span>
+                    </button>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="bg-gray pt-5 pb-5">
+        <div class="container">
+            <h1 class="text-center text-dark-blue fw-bold mb-5 ">Ao que exatamente você vai ter acesso?</h1>
+
+            <div
+                class="mt-4 bg-white h-md-150 d-flex flex-md-row flex-column justify-content-center align-items-center justify-content-md-start text-dark-blue rounded p-1">
+                <img width="50" class="ms-4 img-fluid img-access-mobile"
+                    src="https://landing-vendas.s3.amazonaws.com/landing-fria/icons/money-icon.svg"
+                    alt="money-icon.svg">
+                <div class="ms-4 d-flex flex-column justify-content-center gap-3">
+                    <h4 class="fw-bold subtitle-mobile">1 ano de acesso a todo o conteúdo e dúvidas na plataforma</h4>
+                    <p class="text-mobile">Para consultar onde e quando quiser, eu vou liberar seu acesso durante 1 ano
+                        para assistir, de forma
+                        ilimitada, todo o conteúdo e acessar os materiais de apoio que serão disponibilizados, além das
+                        possíveis atualizações no treinamento.
+                    </p>
+                </div>
+            </div>
+            <div
+                class="mt-4 bg-white h-md-150 d-flex flex-md-row flex-column justify-content-center align-items-center justify-content-md-start text-dark-blue rounded p-1">
+                <img width="50" class="ms-4 img-fluid img-access-mobile"
+                    src="https://landing-vendas.s3.amazonaws.com/landing-fria/icons/telegram-icon.svg"
+                    alt="telegram-icon.svg">
+                <div class="ms-4 d-flex flex-column justify-content-center gap-3">
+                    <h4 class="fw-bold">Comunidade de alunos no Telegram</h4>
+                    <p class="text-mobile">Em nosso canal do Telegram, eu vou compartilhar insights e novos testes que
+                        eu apliquei e
+                        funcionaram. Essa também vai ser uma comunidade de trocas entre os alunos e tira-dúvidas durante
+                        seu
+                        processo de implementação.
+                    </p>
+                </div>
+            </div>
+            <div
+                class="mt-4 bg-white h-md-150 d-flex flex-md-row flex-column justify-content-center align-items-center justify-content-md-start text-dark-blue rounded p-1">
+                <img width="50" class="ms-4 img-fluid img-access-mobile"
+                    src="https://landing-vendas.s3.amazonaws.com/landing-fria/icons/coin-icon.svg" alt="coin-icon.svg">
+                <div class="ms-4 d-flex flex-column justify-content-center gap-3">
+                    <h4 class="fw-bold">Planilhas, guias e materiais práticos</h4>
+                    <p class="text-mobile">Resumos em PDF, planilhas e guias práticos para te ajudar a implementar todos
+                        os processos.
+                    </p>
+                </div>
+            </div>
+            <div
+                class="mt-4 bg-white h-md-150 d-flex flex-md-row flex-column justify-content-center align-items-center justify-content-md-start text-dark-blue rounded p-1">
+                <img width="50" class="ms-4 img-fluid img-access-mobile"
+                    src="https://landing-vendas.s3.amazonaws.com/landing-fria/icons/walkr-w.svg" alt="walkr-w.svg">
+                <div class="ms-4 d-flex flex-column justify-content-center gap-3">
+                    <h4 class="fw-bold">Seu projeto na prática com o aplicativo Walkr</h4>
+                    <p class="text-mobile">Muito mais que um organizador orçamentário, com Walkr você vai construir seu
+                        projeto de vida na
+                        prática. </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="subscription"
+        class="bg-subscribe text-white pt-5 pb-5 d-flex justify-content-center align-items-center position-relative">
+        <div class="container w-100 mt-5 mb-5 text-center ps-3 pe-3">
+
+            <h1 class="fw-bold text-green ">Veja tudo que você terá acesso:</h1>
+
+            <img class="mb-5 mt-5 img-fluid mobile"
+                src="https://landing-vendas.s3.amazonaws.com/landing-fria/access.svg" alt="access.svg">
+            <div class="desktop fw-bold pt-4 pb-4">
+                <p>Método OneValue: <span class="text-green d-block">R$997,00</span></p>
+                <p>Planilhas, guias e materiais práticos: <span class="text-green d-block">R$500,00</span></p>
+                <p>Comunidade Telegram: <span class="text-green d-block">R$197,00</span></p>
+                <p>Projeto Walkr: <span class="text-green d-block">R$397,00</span></p>
+            </div>
+
+
+            <h2 class="fw-bold fs-1">No total isso tudo custaria:</h2>
+            <h2 class="fw-bold fs-1 text-green">R$2.091 </h2>
+
+            <img class="mt-5 mb-5 img-fluid" src="https://landing-vendas.s3.amazonaws.com/landing-fria/iphone.png"
+                alt="iphone.png">
+
+            <h2 class="fw-bold fs-1 text-green">OFERTA ESPECIAL</h2>
+
+            <p class="mt-5 fs-5 fw-bold mb-0 text-decoration-line-through">
+                De:
+                <span>R$1.497</span>
+            </p>
+
+            <h2 class="display-4 fw-bold"> Por: 12x de R$29,90</h2>
+
+            <p class="mt-0 fs-5 mb-3">ou à vista R$297,00</p>
+
+            <div class="d-block mb-3 mt-4">
+                <a href="https://pay.kiwify.com.br/535UEjU" target="_blank"
+                    class="p-3 w-100 btn btn-green rounded fw-bold ps-5 pe-5 fs-5 text-white ">SIM, QUERO MEU ACESSO
+                    AGORA</a>
+            </div>
+
+            <img class="img-fluid" src="https://landing-vendas.s3.amazonaws.com/landing-fria/cards.png" alt="cards.png">
+        </div>
+    </section>
+
+    <section class="text-white pt-5  pb-5">
+        <div class="container pb-5 pt-5 mt-5 mb-5 bg-gray rounded">
+            <div class="row d-flex align-items-center">
+                <div
+                    class="col-md-8 d-flex flex-column justify-content-center align-items-sm-center align-items-center align-items-md-start">
+                    <h1 class="text-blue fw-bold mt-5 text-uppercase">QUEM É MAURO CHUAIRI?</h1>
+
+                    <p class="fs-5 text-blue mt-4">Atuo no mercado financeiro há mais de 15 anos e dediquei toda essa
+                        trajetória
+                        profissional a transformar a vida dos meus clientes. Foi em busca desse propósito que eu tive
+                        acesso a um
+                        método usado há décadas pelos grandes gestores em todo o mundo. É algo que pode transformar
+                        rapidamente
+                        qualquer pessoa em acumuladora de riqueza mesmo que essa não entenda nada de finanças e
+                        investimentos.
+                    </p>
+
+                    <div class="d-flex justify-content-md-start justify-content-sm-center">
+                        <a class="mb-3 btn btn-green text-white fw-bold ps-4 pe-4 pt-2 pb-2  fs-5" href="#subscription">
+                            GARANTIR MINHA INSCRIÇÃO
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <img class="img-fluid"
+                        src=" https://landing-vendas.s3.amazonaws.com/landing-fria/mauro-entrevista.png" alt="">
+                </div>
+            </div>
+
+        </div>
+
+        </div>
+        </div>
+    </section>
+
+    <section id="satisfaction" class="text-white pt-5 pb-5 bg-satisfaction position-relative">
+        <div class="container-fluid">
+
+            <div class="row d-flex align-items-center">
+                <div class="col-md-6 d-flex justify-content-center">
+                    <img src="https://landing-vendas.s3.amazonaws.com/landing-fria/7dias.svg" alt="7dias.svg">
+                </div>
+                <div class="col-md-6 d-flex text-blue ">
+                    <div class="d-block">
+                        <h2 class="text-start text-sm-center fw-bold fs-1 text-uppercase">Isso mesmo! Você tem uma
+                            garantia!
+                        </h2>
+                        <p class="mt-5 fs-5">Incondicional de 7 dias! Ou seja, dentro dos primeiros 7 dias, se você
+                            entender que o Método OneValue não é para você, basta pedir reembolso que devolvemos todo o
+                            valor
+                            investido. É RISCO ZERO para você!
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="bg-app text-white pt-5 pb-5">
+        <div class="row pt-5">
+            <div class="col-md-1"></div>
+            <div class="col-md-4"></div>
+            <div class="col-md-6">
+
+                <div class="ps-5">
+                    <h1 class="ls display-2 fw-bold text-green app-title">APLICATIVO WALKR</h1>
+                    <p class="fw-bold mt-4 pe-5">CONHEÇA A FERRAMENTA QUE VAMOS USAR NO CURSO!</p>
+                </div>
+
+                <div class="d-flex flex-column justify-content-end p-5">
+                    <h2 class="text-green text-uppercase fw-bold">Saiba aonde você quer chegar​</h2>
+                    <p>Walkr calcula o valor de todos os seus sonhos e metas: a partir daí, funciona como um GPS da sua
+                        vida
+                        financeira, indicando o caminho para você conquistar o que quer e precisa agora, sem prejudicar
+                        sua
+                        independência financeira no futuro..</p>
+                    <h2 class="text-green text-uppercase fw-bold">Saiba quanto poupar
+                    </h2>
+                    <p>Com base em seus dados de renda e custo fixo, calculamos quanto você pode poupar e mostramos se é
+                        suficiente para chegar ao seu número (objetivos específicos + aposentadoria). Com isso, você
+                        sabe
+                        exatamente quanto deve guardar por mês.</p>
+                    <h2 class="text-green text-uppercase fw-bold">Assuma o controle dos investimentos
+                    </h2>
+                    <p>Walkr mostra exatamente quanto sua carteira de investimentos precisa render para alcançar o seu
+                        número.
+                        5% ao ano? 10% ao ano? Com essas informações, fica mais fácil decidir onde investir e quais
+                        riscos
+                        você
+                        está disposto a correr.</p>
+                </div>
+                <div class="col-md-1"></div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="container-fluid text-white pt-5 pb-5 mb-5 mt-5 bg-faq">
+        <h2 class="display-5 text-center fw-bold">PERGUNTAS FREQUENTES</h2>
+
+        <div class="row d-flex justify-content-center gap-3">
+            <div class="col-md-8 d-flex justify-content-center justify-content-md-start">
+                <div class="d-block">
+                    <ul class="fs-4  text-start faq">
+                        <li class="bg-transparent mt-5 text-white">
+                            <div class="d-flex align-items-center">
+                                <button onclick="showFaq(1)" class="btn btn-white text-white fs-2  border-0">
+                                    <span>+</span>
+                                </button>
+                                <span class="ms-2 faq-subtitle">
+                                    Existe um prazo para devolução do dinheiro?
+                                </span>
+                            </div>
+                            <div class="ms-5 d-none text-list fst-italic mw-600 mt-4 faq-res" id="btn-faq-1">
+                                <span class="fs-5 fw-normal">Temos o período de 7 dias para sua devolução, mas temos
+                                    certeza que vai
+                                    ser um investimento do qual você não vai se arrepender.
+                                </span>
+                            </div>
+                        </li>
+                        <li class="bg-transparent mt-2 text-white">
+                            <div class="d-flex align-items-center">
+                                <button onclick="showFaq(2)" class="btn btn-faq text-white fs-2  border-0">
+                                    <span>+</span>
+                                </button>
+                                <span class="ms-2 faq-subtitle">
+                                    Quantos módulos o curso possuirá?
+                                </span>
+                            </div>
+                            <div class="ms-5 d-none text-list fst-italic mw-600 mt-4 faq-res" id="btn-faq-2">
+                                <span class="fs-5 fw-normal">
+                                    São 3 módulos com mais de 10 aulas.
+                                </span>
+                            </div>
+                        </li>
+                        <li class="bg-transparent mt-2 text-white">
+                            <div class="d-flex align-items-center">
+                                <button onclick="showFaq(3)" class="btn btn-faq text-white fs-2  border-0">
+                                    <span>+</span>
+                                </button>
+                                <span class="ms-2 faq-subtitle">
+                                    Vou ter uma equipe de suporte do curso?
+                                </span>
+                            </div>
+                            <div class="ms-5 d-none text-list fst-italic mw-600 mt-4 faq-res" id="btn-faq-3">
+                                <span class="fs-5 fw-normal">
+                                    Sim! Teremos um grupo exclusivo para alunos tirarem suas dúvidas.
+                                </span>
+                            </div>
+                        </li>
+                        <li class="bg-transparent mt-2 text-white">
+                            <div class="d-flex align-items-center">
+                                <button onclick="showFaq(4)" class="btn btn-faq text-white fs-2  border-0">
+                                    <span>+</span>
+                                </button>
+                                <span class="ms-2 faq-subtitle">
+                                    Quais formas de pagamento são aceitas?
+                                </span>
+                            </div>
+                            <div class="ms-5 d-none text-list fst-italic mw-600 mt-4 faq-res" id="btn-faq-4">
+                                <span class="fs-5 fw-normal">
+                                    Cartão de crédito, Pix e/ou boleto bancário.
+                                </span>
+                            </div>
+                        </li>
+                        <li class="bg-transparent mt-2 text-white">
+                            <div class="d-flex align-items-center">
+                                <button onclick="showFaq(5)" class="btn btn-faq text-white fs-2  border-0">
+                                    <span>+</span>
+                                </button>
+                                <span class="ms-2 faq-subtitle">
+                                    O curso possui atualizações?
+                                </span>
+                            </div>
+                            <div class="ms-5 d-none text-list fst-italic mw-600 mt-4 faq-res" id="btn-faq-5">
+                                <span class="fs-5 fw-normal">
+                                    Sim, periodicamente teremos atualizações.
+                                </span>
+                            </div>
+                        </li>
+                        <li class="bg-transparent mt-2 text-white">
+                            <div class="d-flex align-items-center">
+                                <button onclick="showFaq(6)" class="btn btn-faq text-white fs-2  border-0">
+                                    <span>+</span>
+                                </button>
+                                <span class="ms-2 faq-subtitle">
+                                    Por quanto tempo vou ter acesso ao curso?
+                                </span>
+                            </div>
+                            <div class="ms-5 d-none text-list fst-italic mw-600 mt-4 faq-res" id="btn-faq-6">
+                                <span class="fs-5 fw-normal">
+                                    Tempo indeterminado.
+                                </span>
+                            </div>
+                        </li>
+                        <li class="bg-transparent mt-2 text-white">
+                            <div class="d-flex align-items-center">
+                                <button onclick="showFaq(7)" class="btn btn-faq text-white fs-2  border-0">
+                                    <span>+</span>
+                                </button>
+                                <span class="ms-2 faq-subtitle">
+                                    Como eu vou receber o meu acesso?
+                                </span>
+                            </div>
+                            <div class="ms-5 d-none text-list fst-italic mw-600 mt-4 faq-res" id="btn-faq-7">
+                                <span class="fs-5 fw-normal">Você recebe por e-mail o link para acessar o seu material
+                                    imediatamente
+                                    após a confirmação do pagamento.
+                                </span>
+                            </div>
+                        </li>
+                        <li class="bg-transparent mt-2 text-white">
+                            <div class="d-flex align-items-center">
+                                <button onclick="showFaq(8)" class="btn btn-faq text-white fs-2  border-0">
+                                    <span>+</span>
+                                </button>
+                                <span class="ms-2 faq-subtitle">
+                                    Quanto tempo demora para receber o acesso do Curso?
+                                </span>
+                            </div>
+                            <div class="ms-5 d-none text-list fst-italic mw-600 mt-4 faq-res" id="btn-faq-8">
+                                <span class="fs-5 fw-normal">Nos pagamentos efetuados com Cartão de Crédito ou Pix, a
+                                    confirmação e
+                                    o envio do material é instantâneo. Você recebe na hora!
+
+                                    Nos pagamentos efetuados via boleto bancário, a confirmação e o envio do material
+                                    acontece em 1
+                                    dia útil após o pagamento do boleto. Significa que se você pagar o boleto hoje, vai
+                                    receber o
+                                    material amanhã, ou no próximo dia útil.
+
+                                    Porém se preferir, você pode enviar por whatsapp o comprovante do pagamento do
+                                    boleto, para
+                                    receber o material e os links no mesmo dia.</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-4">
+            </div>
+            <div class="col-md-8">
+                <a href="#subscription" class="btn btn-green text-white fw-bold ls ps-5 pe-5 w-100">SIM, QUERO MEU
+                    ACESSO AGORA</a>
+            </div>
+        </div>
+
+
+    </section>
+
+    <footer class="fw-bold bg-gray text-secondary pb-2">
+        <div class="container-fluid">
+            <div class="row d-flex">
+                <div
+                    class=" col-md-4 col-sm-6 d-flex flex-column justify-content-center align-items-md-start align-items-center ps-4 mt-3">
+                    <img class="mobile" width="120"
+                        src="https://landing-vendas.s3.amazonaws.com/landing-fria/onevalue.svg" alt="onevalue.svg">
+                    <span class="font-small text-blue fw-normal">Todos os direitos reservados</span>
+                    <span class="font-small text-blue fw-normal">2022 Walkr - 41.3339.465/0001-59</span>
+                    <a href="https://walkr.app" target="_blank"
+                        class="text-blue fw-normal text-decoration-none">www.walkr.app</a>
+                </div>
+                <div
+                    class=" col-md-4 col-sm-6 d-flex flex-column justify-content-center  align-items-md-start align-items-center mt-3">
+                    <span class="font-small text-blue fw-bold mb-2">Tem algum dúvida?</span>
+                    <span class="font-small text-blue fw-normal mb-3">Fale conosco pelo email:
+                        <a class="text-blue fw-normal text-decoration-none"
+                            href="mailto:curso@walkr.app">curso@walkr.app</a>
+                    </span>
+                    <button class="btn btn-green text-white">
+                        <img src="https://landing-vendas.s3.amazonaws.com/landing-fria/icons/whats.svg" alt="whats.svg">
+                        Falar no Whatsapp
+                    </button>
+                </div>
+                <div class="mobile col-md-4 d-md-flex d-none flex-column justify-content-center align-items-center">
+                    <div class="d-flex w-100 justify-content-between">
+                        <span class="font-small text-blue fw-bold mb-2">Como vou receber <br> esse conteúdo?</span>
+                        <img class="mt-m2" width="50"
+                            src="https://landing-vendas.s3.amazonaws.com/landing-fria/icons/selo-growth.svg"
+                            alt="selo-growth.svg">
+                    </div>
+                    <span class="font-small text-blue fw-normal mb-3">
+                        O conteúdo é digital e será liberado pelo
+                        seu email assim que o
+                        pagamento for confirmado.</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
