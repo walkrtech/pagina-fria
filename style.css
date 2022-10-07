@@ -667,6 +667,9 @@ nav {
     .app-padding {
         padding: 0 !important;
     }
+    .app-padding p {
+        padding: 0 !important;
+    }
 
     .video {
         padding: 0 !important;
