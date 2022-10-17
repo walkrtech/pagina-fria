@@ -67,7 +67,7 @@ function videoStatus() {
 }
 
 function videoMute() {
-    if(video.muted){
+    if (video.muted) {
         video.muted = false
         btnSound.setAttribute('src', 'https://landing-vendas.s3.amazonaws.com/icons/Sound.svg')
     } else {
